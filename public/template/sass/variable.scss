@@ -1,0 +1,53 @@
+$font_primary : 'Ubuntu', sans-serif;
+$font_secondary : '', sans-serif;
+$font_heading : 'Lora', serif;
+$font_icon: FontAwesome;
+
+
+$black: #000;
+$white: #fff;
+
+// Global
+$color_primary: #5ADBD7;
+$color_secondary: #222222;
+$color_tertiary: #000000;
+$color_quaternary: #ffffff;
+
+// Fonts
+$font__body-color: #333333;
+$font__heading-color: $color_secondary;
+$font__topbar-color: $white;
+$font__topbar-nav-color: $white;
+$font__topbar-nav-hover-color: $color_secondary;
+$font__navbar-color: $font__body-color;
+$font__navbar-hover-color: $color_primary;
+$font__navbar-active-color: $color_primary;
+$font__navbar-stiky-color: $color_secondary;
+
+// SETTING
+$topbar_bg: $white;
+$navbar_bg: #222222;
+
+$btn-primary-hover: $color_secondary;
+
+// Footer
+$footer-bg: #e9e9e9;
+$footer-font-color: $white;
+$footer-font-color-link: $font__body-color;
+$footer-font-color-hover-link: $color_primary;
+
+// Background
+$bg__topbar: $color_primary;
+
+.bolder{
+	font-weight: 600;
+}
+
+.cfix{
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+@import "mixin.scss";

@@ -1,0 +1,19 @@
+Google API key:		AIzaSyD6gLulCrN4TJiuoGdwjlgzOpsZ6ehihZE
+
+Facebook App ID: 	615292655572233
+App Secret: 		99108c5cf3be4993ec81aabc250374f4
+
+payment information
+paypal sandbox
+	u:	wastina-ppsb@gmail.com
+	pwd: 	WastinaPP!
+
+	client_id:	AepSnF0eLsh66_z0oZhtLJvgJpNDzdZxrcnk6dQ1_lLfVI5O8BorTNEpwFtmvAiOM5oKDUwEigNUW-DY
+	client_secret:	EHKI21nRXD-nm85J9mwFGqdeaeGhgl-B1b7T4rylA9PEKKK425gGj4yGLbtzBT0PHz-002hsnENUoqvL
+
+	u:	wastina-buyer@wastina.com
+	pwd:	WastinaPP!
+
+
+Stripe API: 	pk_test_IxCbuMNs3j4s1FFvBEXSqO0D
+Secret: 	sk_test_61IEOl2HP6QABROQbsfQAYhQ

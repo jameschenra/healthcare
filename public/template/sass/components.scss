@@ -1,0 +1,611 @@
+/* ==========================
+2.1 - Buttons
+============================= */
+
+.btn{
+	font-size: 14px;
+	color: $white;
+	padding: 13px 40px;
+    border: 0;
+	@include border-radius(30px);
+}
+.btn-default {
+    background-color: $color_primary;
+    color: $white;
+	padding: 15px 20px;
+    border: 0;
+	@include border-radius(0);
+}
+.btn-default:hover {
+    background-color: $color_primary;
+}
+.btn-primary {
+    background-color: $color_primary;
+    @extend .btn;
+    color: $white;
+	&:hover{
+		background-color: darken($color_primary, 20%);
+    	color: $white;
+	}
+}
+
+.btn-secondary {
+    background-color: $color_secondary;
+    @extend .btn;
+	&:hover{
+		background-color: $color_primary;
+		color: $white;
+	}
+}
+.btn-primary.disabled{
+    background-color: $color_primary;
+    border-color: $color_primary;
+    color: $font__body-color;
+    @include opacity(1);
+    &:hover{
+    	color: $color_primary;
+		background-color: $color_secondary;
+	}
+}
+.btn-secondary.disabled{
+    background-color: $color_secondary;
+    border-color: $color_secondary;
+    color: $font__body-color;
+    &:hover{
+		color: $color_primary;
+		background-color: $color_secondary;
+	}
+}
+.btn-primary-darken.disabled {
+    background-color: darken($color_primary, 20%);
+    @extend .btn;
+    color: $white;
+	&:hover{
+		background-color: $color_secondary;
+    	color: $white;
+	}
+}
+
+.btn-light {
+    background-color: $white;
+    @extend .btn;
+    color: $color_primary;
+    border: 1px solid $white;
+	&:hover{
+		background-color: $color_secondary;
+    	color: $white;
+    	border-color: transparent;
+	}
+}
+
+/* ==========================
+SOSMED-ICON
+============================= */
+.sosmed-icon{
+  
+  a{
+    color: lighten($font__body-color, 20%);
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    /*display: table-cell;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 2px;
+    &:hover{
+      background-color: $color_secondary;
+    }
+  }
+	&.bg-round{
+	 	a{
+	 		@include border-radius(50%);
+		    color: $white;
+		    background-color: $color_primary;
+		    &:hover{
+	    		color: $white;
+		      	background-color: darken($color_primary, 20%);
+		    }
+		}
+	}
+	&.no-bg-hover{
+	 	a{
+	 		
+		    &:hover{
+		    	color: $color_primary;
+		      background-color: transparent;
+		    }
+		}
+	}
+}
+
+
+
+
+/* ==========================
+BOX IMAGE
+============================= */
+.rs-image-info{
+	text-align: center;
+	.media{
+		margin: 0 auto;
+	}
+	.info-text{
+
+	}
+}
+
+.box-deck{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    
+
+    .box-card{
+    	display: -ms-flexbox;
+	    display: flex;
+	    -ms-flex: 1 0 0%;
+	    flex: 1 0 0%;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    margin-right: 15px;
+	    margin-bottom: 0;
+	    margin-left: 15px;
+    }
+
+    @media (min-width: 576px){
+		-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	    margin-right: -15px;
+	    margin-left: -15px;
+	    .box-card {
+	      display: flex;
+	      flex: 1 0 0%;
+	      flex-direction: column;
+	      /*margin-right: $card-deck-margin;*/
+	      margin-bottom: 0; // Override the default
+	      /*margin-left: $card-deck-margin;*/
+	    }
+    }
+}
+
+
+
+/* ==========================
+BOX ICON
+============================= */
+.rs-icon-funfact{
+	.icon{
+		display: block;
+	    font-size: 40px;
+	    line-height: 1.5;
+	    float: left;
+	    width: 70px;
+	    height: 70px;
+	    background-color: transparent;
+	    text-align: center;
+	    /*@include border-radius(50%);*/
+	}
+	.body-content{
+		margin-left: 85px;
+		h1, h2, h3, h4, h4, h5, h6{
+			clear: none;
+			margin-bottom: 0;
+		}
+	}
+    &.style-2{
+    	text-align: center;
+    	.icon{
+	    	color: $color_secondary;
+	    	float: none;
+	    	background-color: transparent;
+    	    margin: 0 auto;
+    	    font-size: 40px;
+	    }
+	    .body-content{
+			margin-left: 0;
+	    }
+    }
+}
+
+/* ==========================
+BOX ICON
+============================= */
+.rs-icon-info{
+	margin-bottom: 15px;
+	.info-icon{
+	    display: table-cell;
+	}
+	.fa{
+		width: 50px;
+	    height: 50px;
+	    background-color: $color_primary;
+	    @include border-radius(50%);
+	    text-align: center;
+	    padding-top: 14px;
+		font-size: 22px;
+	}
+	.info-text{
+	    display: table-cell;
+	    padding-left: 10px;
+	    position: relative;
+	    vertical-align: middle;
+	}
+	&.center{
+		text-align: center;
+		padding: 30px 0;
+		@include border-radius(6px);
+		.info-icon{
+			display: block;
+		}
+		.fa{
+			background-color: transparent;
+			font-size: 40px;
+			&.bl{
+				background-color: $color_primary;
+				color: $white;
+				width: 80px;
+	    		height: 80px;
+			}
+		}
+		.info-text{
+	    	display: block;
+		}
+	}
+	&.no-bg{
+		
+		
+		.fa{
+		   
+			background-color: transparent;
+			color: $color-primary;
+		}
+	}
+	
+	
+	@include clearfix();
+	
+}
+
+.rs-icon-info-3{
+	margin-bottom: 15px;
+	.info-icon{
+	    display: table-cell;
+	    text-align: center;
+	}
+	.fa{
+		width: 70px;
+	    height: 70px;
+	    background-color: $color_primary;
+	    @include border-radius(50%);
+	    padding-top: 17px;
+		font-size: 50px;
+	}
+	.info-text{
+	    display: table-cell;
+	    padding-left: 20px;
+	    position: relative;
+	    vertical-align: middle;
+	}
+	
+	@include clearfix();
+	
+}
+
+
+/* ==========================
+TEAM
+============================= */
+.rs-team-1{
+	position: relative;
+	margin-bottom: 30px;
+	text-align: center;
+
+	.media{
+		display: block;
+		position: relative;
+		background-color: $white;
+		overflow: hidden;
+		margin-bottom: 20px;
+		position: relative;
+
+		
+	}
+	&:hover{
+		.media{
+			img{
+				@include opacity(.9);
+				-webkit-transform: scale(1.05,1.05);
+				-ms-transform: scale(1.05,1.05);
+				        transform: scale(1.05,1.05);
+				-webkit-transition-timing-function: ease-out;
+				        transition-timing-function: ease-out;
+				-webkit-transition-duration: 250ms;
+				        transition-duration: 250ms;
+			}
+			
+		} 
+	}
+	.body{
+  		overflow: hidden;
+  		color: $font__body-color;
+	}
+	.title{
+		@extend h4;
+		margin-bottom: 5px;
+		color: $color_primary;
+	}
+	.position{
+  		font-size: 14px;
+  		color: lighten($font__body-color, 30%);
+	}
+	.social-icon{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-left: 0;
+		padding-left: 0;
+		font-size: 18px;
+		margin-top: 10px;
+		li{
+			list-style: none;
+			padding: 0 10px;
+			a{
+				color: lighten($font__body-color, 30%);
+				background-color: $white;
+				&:hover{
+					color: $color_primary;
+				}
+			}
+		}
+	}
+}
+
+/* ==========================
+FORM CONTACT
+============================= */
+.form-comment,
+.form-contact,
+.contact{
+	.form-control{
+		height: 45px;
+	    background-color: #f6f6f6;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        box-shadow: none;
+	}
+	textarea.form-control{
+		height: auto;
+	}
+	.btn.disabled, .btn[disabled], fieldset[disabled] .btn{
+	    opacity: 1;
+	}
+}
+
+.form-subscribe{
+	[type="search"]{
+		@include border-radius(30px);
+		min-height: 52px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-color: transparent;
+	}
+	.btn{
+		min-height: 52px;
+	}
+}
+
+/* ==========================
+BOX ICON
+============================= */
+.rs-icon-info-2{
+	position: relative;
+	margin-bottom: 20px;
+	text-align: center;
+	.icon{
+	    font-size: 60px;
+    	line-height: 1.4em;
+		background-color: $color_primary;
+		color: $white;
+		@include border-radius(50%);
+		width: 180px;
+		height: 180px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+		padding-top: 45px;
+		position: relative;
+		-webkit-transition: 0.1s all linear;
+      	transition: 0.1s all linear;
+		.number{
+			width: 50px;
+			height: 50px;
+			font-size: 24px;
+			line-height: 1em;
+			color: $white;
+			background-color: $color_secondary;
+			border: 1px solid $white;
+			position: absolute;
+			top: -10px;
+			right: 15px;
+			@include border-radius(50%);
+		    padding-top: 13px;
+		}
+	}
+}
+
+/* ==========================
+PRICING TABLE
+============================= */
+.rs-pricing-1 {
+	position: relative;
+	text-align: center;
+	padding: 30px 0;
+	@include border-radius(10px);
+	.price {
+		font-size: 60px;
+		font-weight: 700;
+		line-height: 1;
+		padding: 20px 0;
+		position: relative;
+		letter-spacing: -3px;
+		&:after, &:before {
+			border-top: 1px solid rgba($white, 1);
+			content: "";
+			left: 50%;
+			margin-left: -40px;
+			position: absolute;
+			top: auto;
+			width: 80px;
+		}
+		&:before{
+			top: 0;	
+		}
+		&:after{
+			bottom: 0;	
+		}
+		span {
+			display: inline-block;
+			font-size: 28px;
+			margin: 7px 3px 0 0;
+			vertical-align: top;
+			&.mon {
+				color: #999;
+				font-size: 16px;
+				font-weight: 400;
+				margin: 0 0 0 8px;
+				vertical-align: baseline;
+				letter-spacing: 0;
+			}
+		}
+	}
+	.features ul {
+		list-style: outside none none;
+		margin: 0;
+		padding: 35px 0;
+		li {
+			padding: 8px 0;
+		}
+	}
+	
+}
+
+/* ==========================
+TESTIMONIAL
+============================= */
+.rs-testimonial-1{
+	padding: 25px;
+	background-color: rgba($white, .3);
+	@include border-radius(10px);
+	.rs-testimonial-footer{
+		margin: 0 -25px -25px;
+		padding: 18px 25px;
+		border-top: 1px solid $white;
+		font-weight: 700;
+		&::before {
+		    content: "\2014 \00A0"; // em dash, nbsp
+	  	}
+	  	cite{
+	  		display: block;
+	  		font-weight: normal;
+	  	}
+	}
+}
+.rs-testimonial-2{
+	
+	.media{
+		width: 60px;
+		height: 60px;
+		float: left;
+	}
+	.rs-testimonial-footer{
+		font-weight: 700;
+		margin-left: 75px;
+		&::before {
+		    content: "\2014 \00A0"; // em dash, nbsp
+	  	}
+	  	cite{
+	  		display: block;
+	  		font-weight: normal;
+	  	}
+	}
+}
+
+/* ==========================
+Back To Top Section
+============================= */
+.rs-icon-1{
+	.icon{
+		display: table-cell;
+		color: $color_primary;
+	    font-size: 27px;
+    	line-height: 2.2;
+	    width: 60px;
+	    height: 60px;
+	    background: #F8F8F8;
+	    @include border-radius(100px);
+	    text-align: center;
+	}
+	.body-content{
+	    display: table-cell;
+        padding-left: 10px;
+        vertical-align: middle;
+		font-weight: 400;
+		color: lighten($color_secondary, 40%);
+		.heading{
+			font-weight: 700;
+			color: $color_secondary;
+		}
+	}
+}
+
+
+
+/* ==========================
+Back To Top Section
+============================= */
+
+
+
+/* ==========================
+Back To Top Section
+============================= */
+.cd-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+	z-index: 999;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: rgba($color_primary, 1) url('../images/cd-top-arrow.svg') no-repeat center 50%;
+	visibility: hidden;
+	@include opacity(0);
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+	@include border-radius(20px);
+	&:hover {
+		@include opacity(1);
+		-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+		-moz-transition: opacity .3s 0s, visibility 0s 0s;
+		transition: opacity .3s 0s, visibility 0s 0s;
+	}
+	&.cd-is-visible {
+		visibility: visible;
+		@include opacity(1);
+	}
+	&.cd-fade-out {
+		@include opacity(.5);
+	}
+}
+

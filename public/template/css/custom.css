@@ -1,0 +1,95 @@
+.sigin-form-title {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    color: #000;
+    cursor: pointer;
+    width: 100%;
+}
+
+input.is-invalid {
+    border-color: red !important;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 15px;
+}
+
+.login-wrap.forgot-wrap {
+    min-height: 480px !important;
+}
+
+.alert-danger {
+    color: red;
+}
+
+.btn-google {
+    background-color: #dd4b39;
+    border-radius: 25px;
+    height: 50px;
+    padding-top: 12px;
+}
+
+.content-section {
+    min-height: 600px;
+}
+
+.rs-pricing-1 {
+    cursor: pointer;
+}
+
+.rs-pricing-1.active {
+    border: 4px solid darkgreen;
+}
+
+.rs-pricing-1:hover {
+    border: 4px solid lightseagreen;
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+div.relations .form-check-input {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+
+div.relations .form-check-label {
+    font-size: 18px;
+}
+
+div.relations.form-check-inline {
+    align-items: baseline !important;
+}
+
+.plan-price-desc {
+    font-size: 14px;
+}
+
+.datepicker[readonly] {
+    background-color: white !important;
+}
+
+.img-content {
+    width: 100%;
+    height: 400px;
+}
+
+#testimonials .owl-carousel .owl-item img {
+    height: 100%;
+}
+
+.rs-testimonial-2 .body {
+    min-height: 130px;
+}

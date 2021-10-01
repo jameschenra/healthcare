@@ -1,0 +1,120 @@
+li {
+    list-style: none;
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+form .box-body{
+    padding: 20px;
+}
+
+.form-info-group {
+    margin-top: 50px;
+}
+
+.control-label {
+    text-align: right;
+}
+
+.admin-single-icon
+{
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.form-control.is-invalid{
+    border-color: #dc3545;
+}
+
+.invalid-feedback{
+    color: #dc3545;
+}
+
+#usersTable td, th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.box-body {
+    padding-top: 20px;
+}
+
+.box-body.pad-horizontal{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+a.link-close{
+    float: left;
+    color: #090909;
+    font-family: "Calibri";
+    font-size: 23px;
+    font-weight: bold;
+    margin: -3px 0 0 35px;
+}
+
+#thumb-city {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#thumb-icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid pink;
+}
+
+.saveActions button{
+    margin-right: 10px;
+}
+
+.legend-container {
+    width: 220px;
+    height: 20px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.legend-item {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.legend-item-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    display:inline-block;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 10px 0 0 6px;
+    cursor: pointer;
+}
+
+.img-print-container {
+    width: 100px;
+    height: 100px;
+}
+
+.img-print-thumbnail {
+    width: 100px;
+    height: 100px;
+    border: 1px solid plum;
+}
+
+.box.box-primary {
+    overflow: auto;
+}

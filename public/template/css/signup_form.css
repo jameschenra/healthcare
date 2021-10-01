@@ -1,0 +1,26 @@
+/* sign up form */
+
+.sw-theme-arrows {
+    border: 0 !important;
+}
+
+.main_w3agile {
+    padding: 3em;
+    height: auto;
+}
+
+.sw-container.tab-content {
+    background: #fff;
+    padding: 2em;
+    min-height: 565px !important;
+}
+
+.tab-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-group .control-label {
+    margin-top: 6px;
+    text-align: right;
+}
